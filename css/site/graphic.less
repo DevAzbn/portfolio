@@ -1,0 +1,51 @@
+body {
+	#site > .bg(@c-fe-body-bg);
+	#site > .color(@c-fe-body-color);
+	#site > .size(10px);
+}
+
+.menu {
+	
+	ul.menu-list {
+		.mp0;
+		display:block;
+		list-style-type:none;
+		
+		li {
+			display:block;
+			
+			&.active {
+				a {
+					#site > .color(@c-fe-item-block-color);
+				}
+			}
+			
+			a {
+				display:block;
+				#site > .color(@c-fe-body-color);
+				#site > .size(2em);
+				line-height:4em;
+				height:4em;
+			}
+			
+		}
+	}
+}
+
+.content {
+	overflow-x:hidden;
+}
+
+.txt {
+	
+	&.shad {
+		#site > .size(1.4em);
+		.ts();
+		line-height:2.1em;
+	}
+	.goout {
+		#site > .color(@c-hex-r1);
+		#site > .underline();
+	}
+	
+}
